@@ -8,3 +8,9 @@ class Idol {
     print('저는 $name 입니다.');
   }
 }
+
+void main() {
+  Idol blackPink = Idol();
+
+  blackPink.sayName();
+}
