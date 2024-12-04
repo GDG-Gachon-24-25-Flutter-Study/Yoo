@@ -1,0 +1,21 @@
+import 'package:flutter/material.dart';
+
+//생성자
+//클래스 키워드 입력
+class Idol {
+  //클래스에 종속되는 변수 지정
+  final String name; //생성자에서 입력받는 변수들은 일반적으로 fianl 키워드 사용.
+
+  Idol(this.name); //this를 사용할 경우, 해당 되는 변수에 자동으로 매개변수가 저장됨.
+  void sayName() {
+    print('저는 ${this.name}입니다');
+  }
+}
+
+void main() {
+  Idol blackPink = Idol('블랙핑크');
+  blackPink.sayName();
+
+  Idol bts = Idol('bts');
+  bts.sayName();
+}
